@@ -1,0 +1,6 @@
+version: "3.9"
+services:
+  app:
+    build: ./infra/php # ビルドコンテキストを指定（buildを実行する際の現在の作業ディレクトリを指定）
+    volumes:
+      - ./backend:/work
